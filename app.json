@@ -9,7 +9,8 @@
     "navigationBarTitleText": "WeChatMiniProgram-test",
     "navigationBarTextStyle":"black",
     "backgroundColor":"#234bcd",
-    "enablePullDownRefresh":"True"
+    "enablePullDownRefresh":"True",
+    "disableScroll":"False"
   },
   "tabBar": {
     "color":"#000",

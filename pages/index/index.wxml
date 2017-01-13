@@ -7,4 +7,11 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  <block wx:for="{{[1, 2, 3, 4]}}" wx:for-item="i">
+    <block wx:for="{{[1, 2, 3, 4]}}" wx:for-index="j">
+      <block wx:if="{{i <= j+1}}">
+        {{i}} * {{j+1}} = {{i * (j+1)}}
+      </block>
+    </block>
+  </block>
 </view>
