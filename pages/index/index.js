@@ -5,6 +5,7 @@ console.log(app.globalData)
 Page({
   data: {
     motto: 'Hello World',
+    cur_page: {},
     userInfo: {}
   },
   onShareAppMessage: function () {
@@ -23,12 +24,14 @@ Page({
   },
   onLoad: function () {
     console.log('onLoad')
+    var cur_page=getCurrentPages()
     var that = this
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){
       //更新数据
       that.setData({
-        userInfo:userInfo
+        userInfo:userInfo,
+        cur_page:cur_page
       })
     })
   }

@@ -19,3 +19,9 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.block{
+  margin-top: 20rpx;
+  height: 120rpx;
+  border: 2px;
+}

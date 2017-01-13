@@ -13,19 +13,25 @@
     "disableScroll":"False"
   },
   "tabBar": {
-    "color":"#000",
+    "color":"#888",
+    "selectedColor":"green",
     "position":"bottom",
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "index",
-      "iconPath": "iconPath",
-      "selectedIconPath": "selectedIconPath"
-    },
-    {
+      "text": "首页",
+      "iconPath":"image/icon_2d.png",
+      "selectedIconPath":"image/icon_2l.png"
+      }, 
+      {
       "pagePath": "pages/logs/logs",
-      "text": "logs",
-      "iconPath": "iconPath",
-      "selectedIconPath": "selectedIconPath"
-    }]
-  }
+      "text": "日志",
+      "iconPath":"image/icon_1d.png",
+      "selectedIconPath":"image/icon_1l.png"
+      }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }
